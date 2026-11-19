@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Smile Clinic · lo que arreglé en tu página</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #F4F5F0; color: #1C1E1A; font: 17px/1.5 "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; }
+  .caja { max-width: 760px; margin: 0 auto; padding: 36px 20px 60px; }
+  .logo { height: 46px; width: auto; display: block; margin-bottom: 26px; }
+  h1 { font-size: clamp(28px, 5.5vw, 40px); line-height: 1.15; margin: 0 0 10px; }
+  .sub { color: #5A5E55; margin: 0 0 28px; }
+  ol { list-style: none; margin: 0; padding: 0; counter-reset: n; }
+  li { counter-increment: n; background: #fff; border-radius: 12px; padding: 18px 20px 18px 64px; margin-bottom: 12px; position: relative; box-shadow: 0 6px 18px -12px rgba(0,0,0,.25); }
+  li::before { content: counter(n); position: absolute; left: 18px; top: 18px; width: 32px; height: 32px; border-radius: 50%; background: #8DB600; color: #1C1E1A; font-weight: 800; text-align: center; line-height: 32px; }
+  li h2 { font-size: 19px; margin: 0 0 6px; }
+  .antes, .ahora { display: block; font-size: 15.5px; padding-left: 74px; position: relative; margin-top: 4px; }
+  .antes::before, .ahora::before { position: absolute; left: 0; top: 1px; font: 800 11px/1 "Segoe UI", Arial; letter-spacing: .08em; padding: 4px 7px; border-radius: 4px; }
+  .antes { color: #7a2a1b; } .antes::before { content: "ANTES"; background: #F6E1DC; color: #7a2a1b; }
+  .ahora { color: #2f4700; } .ahora::before { content: "AHORA"; background: #E6F0C4; color: #2f4700; }
+  b.num { font-size: 1.15em; }
+  .botones { display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 10px; }
+  .boton { display: inline-block; padding: 15px 24px; border-radius: 999px; font-weight: 700; text-decoration: none; }
+  .b1 { background: #1C1E1A; color: #fff; } .b2 { border: 2px solid #1C1E1A; color: #1C1E1A; }
+  .nota { font-size: 13.5px; color: #6a6e64; margin-top: 22px; }
+</style>
+</head>
+<body>
+<div class="caja">
+  <img class="logo" src="../wp-content/uploads/2024/02/logo-768x236.png" alt="Smile Clinic" width="768" height="236" onerror="this.style.display='none'">
+  <h1>Revisé tu página y le arreglé estos detalles.</h1>
+  <p class="sub">Es la misma página, con el mismo diseño, las mismas fotos y los mismos textos. Solo cambia lo que estaba fallando.</p>
+
+  <ol>
+    <li><h2>Era muy pesada para el celular</h2>
+      <span class="antes">El inicio pesaba <b class="num">78 MB</b>: el video de fondo pesaba 47 MB y dos fotos del fondo, 19 MB cada una. Con datos móviles, mucha gente se va antes de que cargue.</span>
+      <span class="ahora">Pesa <b class="num">{PESO_NUEVO}</b>, con el mismo video y las mismas fotos.</span></li>
+    <li><h2>Google no sabía que están en Talca</h2>
+      <span class="antes">Ninguna de las 21 páginas tenía descripción, ningún título decía «Talca» y el inicio se llamaba «Home».</span>
+      <span class="ahora">Cada página dice qué tratamiento es y que están en Talca, con dirección, horario y mapa para Google.</span></li>
+    <li><h2>El WhatsApp llegaba en blanco</h2>
+      <span class="antes">Al apretar el botón verde, el mensaje llegaba vacío: no se sabe quién viene desde la página.</span>
+      <span class="ahora">Llega «Hola Smile Clinic, vengo de la página web y quiero agendar una hora». Así sabes cuántos pacientes trae la página.</span></li>
+    <li><h2>Prometía un enlace para agendar que no existe</h2>
+      <span class="antes">En las preguntas frecuentes dice «a través del enlace que se encuentra en nuestra página web», pero ese enlace no está en ninguna parte.</span>
+      <span class="ahora">Dice que pueden agendar con el botón verde de WhatsApp, que sí está.</span></li>
+    <li><h2>Google no veía a los doctores</h2>
+      <span class="antes">En «Equipo», los nombres están solo dentro de las fotos: Google no los puede leer.</span>
+      <span class="ahora">Cada doctor tiene su nombre y especialidad escritos, para que aparezcan cuando buscan su nombre.</span></li>
+    <li><h2>Páginas de prueba y faltas de ortografía</h2>
+      <span class="antes">Estaban publicadas «Sample Page», «Hello world!» y «Global Styles». Y faltas como «AGENDAR UN CITA», «Encuentranos» o «¿CUAL ES?».</span>
+      <span class="ahora">Fuera las de prueba y corregidas las faltas.</span></li>
+  </ol>
+
+  <div class="botones">
+    <a class="boton b1" href="../">Ver tu página arreglada</a>
+    <a class="boton b2" href="../version-nueva/">Ver una versión nueva</a>
+  </div>
+  <p class="nota">Revisado el 18 de noviembre de 2026. Tu página se armó en 2024 (las fotos se subieron en febrero y abril de 2024) y Google tiene como última actualización el 19 de abril de 2024. Pendiente: las páginas del Dr. Camilo Ulloa y del Dr. José Francisco Rodríguez están vacías; falta su presentación.</p>
+</div>
+</body>
+</html>
